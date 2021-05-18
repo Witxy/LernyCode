@@ -1,0 +1,13 @@
+pageCount = 7
+taskCount = {6,3,3,3,1,0}
+buttonRows = {2,1,2,2,1,0}
+buttonInRowCount = {3,3,4,3,3,3,0}
+buttonText = {"number", "char", "string", "sNumber", "count", "int", "'3'", "3", "82347273312","0","-5","sNumber.Length", "++", "0", "100", "--", "count++", "count--","sNumber[i]", "number", "sNumber[0]""count", "number", "sNumber", "count"}
+elementCount = {9, 12, 8, 14, 4, 9}
+pageContent = {row, edit, text, row, edit, text, row, edit, text, row, text, edit, text, row, text, edit, text, row, text, edit, text,row, text, edit, text, edit, text, edit, text, rowtext, rowtext, row, text, text, edit, text, edit, text,row, text, text, edit, textrow, row, text, edit, text, textrow, textrow, textrow, textrow, textrow, textrow, textrow, textrow, textrow} 
+editText = {2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+textText = {";", ";", ";", "char number = ", ";", "int count = ", ";", "string sNumber = ", ";","for(int i= ", "i<", "i", ") {}", " ", "if(", "==", ")", " ", " ", "Console.WriteLine(Количество цифр = "+", ");"}
+rowtextText = {"for(int i=0; i<sNumber.Length; i++)", "{", "}", "char number = '3';", "string sNumber = "82347273312";", "int count = 0;", "for(int i=0; i<sNumber.Length; i++)", "{", "   if(sNumber[i]==number)", "       count++;", "}", " Console.WriteLine("Количество цифр " + count)"}
+rowTextSpan = {6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+rightAnswerArray = {"char","number","int","count","string","sNumber","'3'","0","82347273312","0","sNumber.Length","++","sNumber[i]","number","count++","count"}	
+				
