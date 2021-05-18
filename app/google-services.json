@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "547746963473",
+    "project_id": "lernycode",
+    "storage_bucket": "lernycode.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547746963473:android:cfab2198a57675cf8591b0",
+        "android_client_info": {
+          "package_name": "com.example.tabmenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547746963473-1579pk5fjp041b1l0ipd7fp0hi4im84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL72v8SaweDyjVPr3Jsa43z91fG0xemsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547746963473-1579pk5fjp041b1l0ipd7fp0hi4im84s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

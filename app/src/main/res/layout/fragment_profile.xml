@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:id="@+id/main_fragment"
+
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        app:title="@string/profile"
+        app:titleTextColor="@color/white"
+
+        app:menu="@menu/profile_menu"
+
+
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:background="@color/grey"
+        >
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/grey">
+    </ImageView>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:text="Profile name"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/profile_shape">
+
+
+        <TextView
+            android:id="@+id/myStatText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/dark_grey"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="@string/stat"
+            android:textColor="@color/white_inactive"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/openAllText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/open_all"
+            android:textColor="@color/white_inactive"
+            android:textSize="12sp"
+            android:background="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="openStat"/>
+
+        <TextView
+            android:id="@+id/CurseCompleteText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="@color/dark_grey"
+            android:layout_marginTop="25dp"
+            android:text="@string/curse"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myStatText" />
+
+        <ProgressBar
+            android:id="@+id/progressCurse"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_grey"
+            android:progressTint="@color/yellow"
+            app:layout_constraintBottom_toTopOf="@+id/timeText"
+            app:layout_constraintEnd_toStartOf="@+id/CursePercentage"
+            app:layout_constraintStart_toEndOf="@+id/CurseCompleteText"
+            app:layout_constraintTop_toBottomOf="@+id/myStatText" />
+
+        <TextView
+            android:id="@+id/CursePercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:text="0%"
+            android:textColor="@color/white"
+            android:background="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myStatText" />
+
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/time_in_app"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:background="@color/dark_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CurseCompleteText" />
+
+        <TextView
+            android:id="@+id/timeHoursText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_grey"
+            android:text="0"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/hoursText"
+            app:layout_constraintTop_toBottomOf="@+id/progressCurse" />
+
+        <TextView
+            android:id="@+id/hoursText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_grey"
+            android:text="@string/hours"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressCurse" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/profile_shape">
+
+        <TextView
+            android:id="@+id/achieveText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/dark_grey"
+            android:text="@string/my_achieve"
+            android:textColor="@color/white_inactive"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/openAllAchieveText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/open_all"
+            android:textColor="@color/white_inactive"
+            android:textSize="12sp"
+            android:background="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="openAchieve"/>
+
+        <ImageButton
+            android:id="@+id/achieve1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+
+            android:background="@color/dark_grey"
+            android:scaleType="centerInside"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/achieve1_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/achieve2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/achieveText" />
+
+        <ImageButton
+            android:id="@+id/achieve2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@color/dark_grey"
+            android:scaleType="centerInside"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/achieve2_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/achieve3"
+            app:layout_constraintTop_toBottomOf="@+id/achieveText" />
+
+        <ImageButton
+            android:id="@+id/achieve3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@color/dark_grey"
+            android:scaleType="centerInside"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/achieve3_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/achieve4"
+            app:layout_constraintTop_toBottomOf="@+id/achieveText" />
+
+        <ImageButton
+            android:id="@+id/achieve4"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@color/dark_grey"
+            android:scaleType="centerInside"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/achieve4_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/achieve5"
+            app:layout_constraintTop_toBottomOf="@+id/achieveText" />
+
+        <ImageButton
+            android:id="@+id/achieve5"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/dark_grey"
+            android:scaleType="centerInside"
+            android:src="@drawable/achieve5_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/achieveText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

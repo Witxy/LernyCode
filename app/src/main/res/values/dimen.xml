@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_height">300dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="taskBut_height">140dp</dimen>
+    <dimen name="taskBut_width">300dp</dimen>
+    <dimen name="taskFull_height">175dp</dimen>
+    <dimen name="taskFull_width">400dp</dimen>
+</resources>

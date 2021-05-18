@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">LernyCode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="log">Вход</string>
+    <string name="reg">Регистрация</string>
+
+    <string name="login">Войти</string>
+    <string name="email">Почта</string>
+    <string name="name">Никнейм</string>
+    <string name="password">Пароль</string>
+    <string name="password_again">Повторите пароль</string>
+    <string name="password_forgot">Забыли пароль?</string>
+    <string name="register">Регистрация</string>
+    <string name="profile">Профиль</string>
+    <string name="share">Поделиться</string>
+    <string name="invite">Пригласить друзей</string>
+    <string name="settings_profile">Настройки</string>
+    <string name="theme_color">Светлая тема</string>
+    <string name="theme_colorBlack">Темная тема</string>
+    <string name="changeTitle">Изменить заглавие</string>
+
+    <!-- Меню в обучении-->
+    <string name="vocab">Словарь</string>
+    <string name="fontSize">Размер шрифта</string>
+    <string name="favourite">Добавить в закладки</string>
+
+
+    <!-- Настройки -->
+    <string name="sett_account">АККАУНТ</string>
+    <string name="sett_redProf">Редактировать профиль</string>
+
+    <string name="sett_changePass">Изменить пароль</string>
+    <string name="sett_settings">НАСТРОЙКИ</string>
+    <string name="sett_notification">Уведомления</string>
+    <string name="sett_sound">Звук</string>
+    <string name="sett_soundExpTrue">Выключить звук в приложении</string>
+    <string name="sett_soundExpFalse">Включить звук в приложении</string>
+    <string name="sett_exit">Выход из аккаунта</string>
+
+    <!--Редактировать профиль -->
+    <string name="avatar_change">Изменить аватар</string>
+    <string name="prof_name">Имя</string>
+    <string name="prof_email">Почта</string>
+    <string name="save">Сохранить</string>
+    <string name="error_email">Такая почта уже зарегистрирована!</string>
+    <string name="stat">Моя статистика</string>
+    <string name="open_all">Еще</string>
+    <string name="curse">Курс пройден на:</string>
+    <string name="time_in_app">Время в приложении: </string>
+    <string name="hours">часов</string>
+    <string name="minutes">минут</string>
+    <string name="seconds">секунд</string>
+    <string name="my_achieve">Мои достижения</string>
+
+
+    <!--Сменить пароль -->
+    <string name="old_password">Введите старый пароль</string>
+    <string name="new_password">Введите новый пароль</string>
+    <string name="new_password_again">Повторите новый пароль</string>
+    <string name="new_password_error">Пароли не совпадают!</string>
+    <string name="old_password_error">Пароль неверен!</string>
+    <!-- Раздел обучения -->
+
+    <!-- ТекстВью-->
+    <string name="groupFirst">Знакомство с С#</string>
+    <string name="groupSecond">Переменные и первая программа</string>
+    <string name="groupThird">Циклы и условные операторы</string>
+    <!--Кнопки -->
+    <string name="buttonFirst">Знакомство с языком</string>
+    <string name="buttonSecond">Преимущества языка</string>
+
+    <string name="buttonThird">Алфавит и Переменные</string>
+    <string name="buttonFourth">Типы данных</string>
+
+    <string name="buttonFifth">Математические выражения</string>
+
+    <string name="buttonSixth">Циклы</string>
+    <string name="buttonSeventh">Условные операторы</string>
+
+
+    <!--Раздел заданий -->
+    <string name="taskFirst">Основные задания</string>
+    <string name="seeAll"><u>Посмотреть все -></u></string>
+    <string name="title_activity_task">TaskActivity</string>
+    <string name="enterCode">Вставьте код снизу</string>
+
+
+
+    <!--Первое задание -->
+    <string name="task1_taskText1">Первое что надо сделать в любой программе - определить нужные переменные. Определим переменные, которые понадобятся нам для дальнейшей работы.</string>
+    <string name="task1_codeText1">В первой строке объявите переменную "number" с типом char \nВ следующей строке переменную "count" с типом int \nИ наконец переменную "sNumber" с типом string</string>
+    <string name="task1_taskText2">Теперь надо задать нашим переменным значения. По условию задания зададим переменной типа string значение "82347273312", переменная number у нас будет отвечать за цифру, которую мы ищем, поэтому присвоем ей значение 3, а count - счетчик, будет идти с нулевого значения</string>
+    <string name="task1_codeText2">Присвойте переменным значения: </string>
+    <string name="task1_taskText3">Теперь напишем цикл for, в котором зададим нужные параметры.</string>
+    <string name="task1_codeText3">Присвойте параметрам цикла for правильные значения </string>
+    <string name="task1_taskText4">После того как наш цикл написан, требуется написать условие, которое будет высчитывать количество нужных нам цифр в заданной строке. Для этого нам требуется сравнить каждый символ строки по очереди с цифрой которую мы ищем. А если найдем такую, то требуется увеличить наш счетчик на один </string>
+    <string name="task1_codeText4">Вставьте правильние значения в ячейки ниже</string>
+    <string name="task1_taskText5">И осталось вывести правильный ответ, наш счетчик, который покажет сколько раз определенная цифра появлялась в нашей строке</string>
+    <string name="task1_codeText5">Вставьте правильную переменную, которую требуется вывести</string>
+    <string name="task1_taskText6">Вы молодец! Задание выполнено успешно, теперь можете посмотреть на весь код, который у вас получился</string>
+
+
+
+    <!--Уроки -->
+        <!--Первый урок-->
+    <string name="lesson1_text_page1">На сегодняшний момент язык программирования C# один из самых мощных, быстро развивающихся и востребованных языков в ИТ-отрасли. В настоящий момент на нем пишутся самые различные приложения: от небольших десктопных программок до крупных веб-порталов и веб-сервисов, обслуживающих ежедневно миллионы пользователей.\n\nC# уже не молодой язык и кFк и вся платформа .NET уже прошел большой путь. Первая версия языка вышла вместе с релизом Microsoft Visual Studio .NET в феврале 2002 года. Текущей версией языка является версия C# 9.0, которая вышла 10 ноября 2020 года вместе с релизом .NET 5.\n\nC# является языком с Си-подобным синтаксисом и близок в этом отношении к C++ и Java. Поэтому, если вы знакомы с одним из этих языков, то овладеть C# будет легче.\n\nC# является объектно-ориентированным и в этом плане много перенял у Java и С++. Например, C# поддерживает полиморфизм, наследование, перегрузку операторов, статическую типизацию. Объектно-ориентированный подход позволяет решить задачи по построению крупных, но в тоже время гибких, масштабируемых и расширяемых приложений. И C# продолжает активно развиваться, и с каждой новой версией появляется все больше интересных функциональностей, как, например, лямбды, динамическое связывание, асинхронные методы и т.д.</string>
+    <string name="lesson1_test_page2">К каким языка ближе всего C#?</string>
+    <string name="lesson1_text_page3">Когда говорят C#, нередко имеют в виду технологии платформы .NET (Windows Forms, WPF, ASP.NET, Xamarin). И, наоборот, когда говорят .NET, нередко имеют в виду C#. Однако, хотя эти понятия связаны, отождествлять их неверно. Язык C# был создан специально для работы с фреймворком .NET, однако само понятие .NET несколько шире. \n\n Как-то Билл Гейтс сказал, что платформа .NET - это лучшее, что создала компания Microsoft. Возможно, он был прав. Фреймворк .NET представляет мощную платформу для создания приложений. Можно выделить следующие ее основные черты:</string>
+    <string name="lesson1_code_page3">bool alive = true;\nbool isDead = false;</string>
+    <string name="lesson1_code_page4">using System "Hello";\n\nnamespace HelloApp
+\n{
+\n\u0020\u0020\u0020\u0020class Program
+\n\u0020\u0020\u0020\u0020{
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020static void Main(string[] args)
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020{
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 string name = \"Tom\";
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020int age = 33;
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020bool isEmployed = false;
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020double weight = 78.65;
+\n
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Console.WriteLine($\"Имя: {name}\");
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Console.WriteLine($\"Возраст: {age}\");
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Console.WriteLine($\"Вес: {weight}\");
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Console.WriteLine($\"Работает: {isEmployed}\");
+\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020}
+\n\u0020\u0020\u0020\u0020}
+\n}</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

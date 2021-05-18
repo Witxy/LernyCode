@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/fragment_code">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+         <ImageView
+             android:layout_width="16dp"
+             android:layout_height="16dp"
+             android:src="@drawable/logo"
+             android:scaleType="fitCenter"
+             android:layout_marginTop="7dp"
+             android:layout_marginStart="5dp"
+
+             />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/group2"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+
+            />
+            <TextView
+
+                android:id="@+id/seeAll_group1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seeAll"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:onClick="taskType"
+                android:tag="1"
+
+
+
+
+                />
+
+
+
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:id="@+id/task_1"
+                    android:layout_width="@dimen/taskBut_width"
+                    android:layout_height="@dimen/taskBut_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/task_4"
+                    android:onClick="taskComplete"
+                    android:tag="1"/>
+                <ImageView
+                    android:id="@+id/task_2"
+                    android:layout_width="@dimen/taskBut_width"
+                    android:layout_height="@dimen/taskBut_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/task_2"
+                    android:onClick="taskComplete"
+                    android:tag="2"
+                    />
+                <ImageView
+                    android:id="@+id/task_3"
+                    android:layout_width="@dimen/taskBut_width"
+                    android:layout_height="@dimen/taskBut_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/task_3"
+                    />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/logo"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="5dp"
+
+                />
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/group3"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+
+                />
+            <TextView
+
+                android:id="@+id/seeAll_group2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seeAll"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:onClick="taskType"
+                android:tag="2"
+
+
+
+                />
+
+
+
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:id="@+id/task_4"
+                    android:layout_width="@dimen/taskBut_width"
+                    android:layout_height="@dimen/taskBut_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/task_3" />
+                <ImageView
+                    android:id="@+id/task_5"
+                    android:layout_width="@dimen/taskBut_width"
+                    android:layout_height="@dimen/taskBut_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/task_2"
+                    />
+                <ImageView
+                    android:id="@+id/task_6"
+                    android:layout_width="@dimen/taskBut_width"
+                    android:layout_height="@dimen/taskBut_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/task_1"
+                    />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

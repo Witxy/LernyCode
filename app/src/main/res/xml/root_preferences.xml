@@ -1,0 +1,54 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#834444"
+    android:theme="@style/SettingsFragmentStyle">
+
+    <PreferenceCategory
+        android:background="@color/grey"
+
+        android:backgroundTint="#C12525"
+        android:foregroundTint="#7E2222"
+        app:title="@string/sett_account">
+
+        <Preference
+            app:key="pref_redProf"
+            app:title="@string/sett_redProf"
+
+            />
+        <Preference
+            app:key="pref_changePass"
+            app:title="@string/sett_changePass"
+
+            />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:background="@color/grey"
+        android:textColor="#FA0000"
+        app:title="@string/sett_settings">
+
+        <Preference
+            app:key="pref_notification"
+            app:title="@string/sett_notification"
+
+            />
+        <SwitchPreference
+            app:defaultValue="true"
+            app:key="pref_sound"
+            app:summaryOff="@string/sett_soundExpFalse"
+            app:summaryOn="@string/sett_soundExpTrue"
+            app:title="@string/sett_sound"
+
+
+            />
+        <Preference
+            app:key="pref_exit"
+            app:title="@string/sett_exit"
+
+            />
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

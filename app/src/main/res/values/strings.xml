@@ -1,0 +1,339 @@
+<resources>
+    <string name="app_name">LernyCode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="log">Вход</string>
+    <string name="reg">Регистрация</string>
+
+    <string name="login">Войти</string>
+    <string name="email">Почта</string>
+    <string name="name">Никнейм</string>
+    <string name="password">Пароль</string>
+    <string name="password_again">Повторите пароль</string>
+    <string name="password_forgot">Забыли пароль?</string>
+    <string name="register">Регистрация</string>
+    <string name="profile">Профиль</string>
+    <string name="share">Поделиться</string>
+    <string name="invite">Пригласить друзей</string>
+    <string name="settings_profile">Настройки</string>
+    <string name="theme_color">Темная тема</string>
+    <string name="theme_colorBlack">Темная тема</string>
+    <string name="changeTitle">Изменить заглавие</string>
+
+    <!-- Меню в обучении-->
+    <string name="vocab">Словарь</string>
+    <string name="fontSize">Размер шрифта</string>
+    <string name="favourite">Добавить в закладки</string>
+
+
+    <!-- Настройки -->
+    <string name="sett_account">АККАУНТ</string>
+    <string name="sett_redProf">Редактировать профиль</string>
+
+    <string name="sett_changePass">Изменить пароль</string>
+    <string name="sett_settings">НАСТРОЙКИ</string>
+    <string name="sett_notification">Уведомления</string>
+    <string name="sett_sound">Звук</string>
+    <string name="sett_soundExpTrue">Выключить звук в приложении</string>
+    <string name="sett_soundExpFalse">Включить звук в приложении</string>
+    <string name="sett_exit">Выход из аккаунта</string>
+
+    <!--Редактировать профиль -->
+    <string name="avatar_change">Изменить аватар</string>
+    <string name="prof_name">Имя</string>
+    <string name="prof_email">Почта</string>
+    <string name="save">Сохранить</string>
+    <string name="error_email">Такая почта уже зарегистрирована!</string>
+    <string name="stat">Моя статистика</string>
+    <string name="open_all">Еще</string>
+    <string name="curse">Курс пройден на:</string>
+    <string name="time_in_app">Время в приложении: </string>
+    <string name="hours">часов</string>
+    <string name="minutes">минут</string>
+    <string name="seconds">секунд</string>
+    <string name="my_achieve">Мои достижения</string>
+
+
+    <!--Сменить пароль -->
+    <string name="old_password">Введите старый пароль</string>
+    <string name="new_password">Введите новый пароль</string>
+    <string name="new_password_again">Повторите новый пароль</string>
+    <string name="new_password_error">Пароли не совпадают!</string>
+    <string name="old_password_error">Пароль неверен!</string>
+    <!-- Раздел обучения -->
+
+    <!-- ТекстВью-->
+    <string name="group1">Знакомство с С#</string>
+    <string name="group2">Основы программирования на C#</string>
+    <string name="group3">Классы. Объектно-ориентированное программирование</string>
+    <!--Кнопки -->
+    <string name="button1">Знакомство с языком</string>
+    <string name="button2">Структура и переменные</string>
+    <string name="button3">Литералы</string>
+    <string name="button4">Типы данных</string>
+    <string name="button5">Консольный ввод-вывод</string>
+    <string name="button6">Арифметические операции</string>
+    <string name="button7">Поразрядные операции</string>
+    <string name="button8">Операции присваивания</string>
+    <string name="button9">Преобразования типов данных</string>
+    <string name="button10">Условные выражения</string>
+    <string name="button11">Условные конструкции</string>
+    <string name="button12">Циклы</string>
+    <string name="button13">Массивы</string>
+    <string name="button14">Методы</string>
+    <string name="button15">Параметры методов</string>
+    <string name="button16">Классы и объекты</string>
+    <string name="button17">Структуры</string>
+
+
+    <!--Раздел заданий -->
+    <string name="taskFirst">Основные задания</string>
+    <string name="seeAll"><u>Посмотреть все -></u></string>
+    <string name="title_activity_task">TaskActivity</string>
+    <string name="enterCode">Вставьте код снизу</string>
+
+
+    <!--Первое задание -->
+    <string name="task1_taskText1">Первое что надо сделать в любой программе - определить нужные переменные. Определим переменные, которые понадобятся нам для дальнейшей работы.</string>
+    <string name="task1_codeText1">В первой строке объявите переменную "number" с типом char \nВ следующей строке переменную "count" с типом int \nИ наконец переменную "sNumber" с типом string</string>
+    <string name="task1_taskText2">Теперь надо задать нашим переменным значения. По условию задания зададим переменной типа string значение "82347273312", переменная number у нас будет отвечать за цифру, которую мы ищем, поэтому присвоем ей значение 3, а count - счетчик, будет идти с нулевого значения</string>
+    <string name="task1_codeText2">Присвойте переменным значения: </string>
+    <string name="task1_taskText3">Теперь напишем цикл for, в котором зададим нужные параметры.</string>
+    <string name="task1_codeText3">Присвойте параметрам цикла for правильные значения </string>
+    <string name="task1_taskText4">После того как наш цикл написан, требуется написать условие, которое будет высчитывать количество нужных нам цифр в заданной строке. Для этого нам требуется сравнить каждый символ строки по очереди с цифрой которую мы ищем. А если найдем такую, то требуется увеличить наш счетчик на один </string>
+    <string name="task1_codeText4">Вставьте правильние значения в ячейки ниже</string>
+    <string name="task1_taskText5">И осталось вывести правильный ответ, наш счетчик, который покажет сколько раз определенная цифра появлялась в нашей строке</string>
+    <string name="task1_codeText5">Вставьте правильную переменную, которую требуется вывести</string>
+    <string name="task1_taskText6">Вы молодец! Задание выполнено успешно, теперь можете посмотреть на весь код, который у вас получился</string>
+
+
+    <!--Уроки -->
+    <!--Первый урок-->
+    <string name="lesson1_text_page1_1">На сегодняшний момент язык программирования C# один из самых мощных, быстро развивающихся и востребованных языков в ИТ-отрасли. В настоящий момент на нем пишутся самые различные приложения: от небольших десктопных программок до крупных веб-порталов и веб-сервисов, обслуживающих ежедневно миллионы пользователей.\n\nC# уже не молодой язык и кFк и вся платформа .NET уже прошел большой путь. Первая версия языка вышла вместе с релизом Microsoft Visual Studio .NET в феврале 2002 года. Текущей версией языка является версия C# 9.0, которая вышла 10 ноября 2020 года вместе с релизом .NET 5.\n\nC# является языком с Си-подобным синтаксисом и близок в этом отношении к C++ и Java. Поэтому, если вы знакомы с одним из этих языков, то овладеть C# будет легче.\n\nC# является объектно-ориентированным и в этом плане много перенял у Java и С++. Например, C# поддерживает полиморфизм, наследование, перегрузку операторов, статическую типизацию. Объектно-ориентированный подход позволяет решить задачи по построению крупных, но в тоже время гибких, масштабируемых и расширяемых приложений. И C# продолжает активно развиваться, и с каждой новой версией появляется все больше интересных функциональностей, как, например, лямбды, динамическое связывание, асинхронные методы и т.д.</string>
+    <string name="lesson1_text_page2_1">К каким языка ближе всего C#?</string>
+    <string name="lesson1_text_page3_1">Когда говорят C#, нередко имеют в виду технологии платформы .NET (Windows Forms, WPF, ASP.NET, Xamarin). И, наоборот, когда говорят .NET, нередко имеют в виду C#. Однако, хотя эти понятия связаны, отождествлять их неверно. Язык C# был создан специально для работы с фреймворком .NET, однако само понятие .NET несколько шире. \n\n Как-то Билл Гейтс сказал, что платформа .NET - это лучшее, что создала компания Microsoft. Возможно, он был прав. Фреймворк .NET представляет мощную платформу для создания приложений. Можно выделить следующие ее основные черты: \n\n <b>• Поддержка нескольких языков</b> Основой платформы является общеязыковая среда исполнения Common Language Runtime (CLR), благодаря чему .NET поддерживает несколько языков: наряду с C# это также VB.NET, C++, F#, а также различные диалекты других языков, привязанные к .NET, например, Delphi.NET. При компиляции код на любом из этих языков компилируется в сборку на общем языке CIL (Common Intermediate Language) - своего рода ассемблер платформы .NET. Поэтому при определенных условиях мы можем сделать отдельные модули одного приложения на отдельных языках.\n\n<b>• Кроссплатформенность.</b> .NET является переносимой платформой (с некоторыми ограничениями). Например, последняя версия платформы на данный момент - .NET 5 поддерживается на большинстве современных ОС Windows, MacOS, Linux. Используя различные технологии на платформе .NET, можно разрабатывать приложения на языке C# для самых разных платформ - Windows, MacOS, Linux, Android, iOS, Tizen.\n\n<b>• Мощная библиотека классов.</b> .NET представляет единую для всех поддерживаемых языков библиотеку классов. И какое бы приложение мы не собирались писать на C# - текстовый редактор, чат или сложный веб-сайт - так или иначе мы задействуем библиотеку классов .NET.\n\n<b>• Разнообразие технологий.</b> Общеязыковая среда исполнения CLR и базовая библиотека классов являются основой для целого стека технологий, которые разработчики могут задействовать при построении тех или иных приложений. Например, для работы с базами данных в этом стеке технологий предназначена технология ADO.NET и Entity Framework Core. Для построения графических приложений с богатым насыщенным интерфейсом - технология WPF и UWP, для создания более простых графических приложений - Windows Forms. Для разработки мобильных приложений - Xamarin. Для создания веб-сайтов и веб-приложений - ASP.NET и т.д.
+
+К этому стоит добавить активной развивающийся и набирающий популяность Blazor - фреймворк, который работает поверх .NET и который позволяет создавать веб-приложения как на стороне сервера, так и на стороне клиента. А в будущем будет поддерживать создание мобильных приложений и, возможно, десктоп-приложений.\n\n<b>Производительность.</b> Согласно ряду тестов веб-приложения на .NET 5 в ряде категорий сильно опережают веб-приложения, построенные с помощью других технологий. Приложения на .NET 5 в принципе отличаются высокой производительностью.\n\nТакже еще следует отметить такую особенность языка C# и фреймворка .NET, как автоматическая сборка мусора. А это значит, что нам в большинстве случаев не придется, в отличие от С++, заботиться об освобождении памяти. Вышеупомянутая общеязыковая среда CLR сама вызовет сборщик мусора и очистит память.</string>
+    <string name="lesson1_text_page4_1">Стоит отметить, что .NET долгое время развивался премущественно как платформа для Windows под названием .NET Framework. В 2019 вышла последняя версия этой платформы - .NET Framework 4.8. Она больше не развивается. \n\n С 2014 Microsoft стал развивать альтернативную платформу - .NET Core, которая уже предназначалась для разных платформ и должна была вобрать в себя все возможности устаревшего .NET Framework и добавить новую функциональность. Затем Microsoft последовательно выпустил ряд версий этой платформы: .NET Core 1, .NET Core 2, .NET Core 3. Логическим развитием .NET Core 3.0 стала расматриваемая в этом руководстве платформа .NET 5. Поэтому следует различать .NET Framework, который предназначен преимущественно для Windows, и кросплатформенный .NET 5. В данном руководстве речь будет идти о C# в связке с .NET 5, поскольку это актуальная платформа. \n\n Также стоит упомянуть о платформе Mono, которая была создана еще в 2004 году и представляла опенсорс-версию платформы .NET Framework для Linux и MacOS. Используя Mono, можно было создавать кросплатформенные приложения на C#. Mono по-прежнему используется. Например, Xamarin - технология для создания мобильных приложений для Android и iOS с помощью языка C# использует Mono. Тем не менее в будущем при выходе новой версии - .NET 6 в следующем году планируется, что .NET 6 вберет в себя платформу Mono.  </string>
+
+    <string name="TEST">bool alive = true;\nbool isDead = false;</string>
+    <string name="TEST1">using System "Hello";\n\nnamespace HelloApp\n{\n\u0020\u0020\u0020\u0020class Program\n\u0020\u0020\u0020\u0020{\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020static void Main(string[] args)\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020{\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 string name = \"Tom\";\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020int age = 33;\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020bool isEmployed = false;\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020double weight = 78.65;\n\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Console.WriteLine($\"Имя: {name}\");\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Console.WriteLine($\"Возраст: {age}\");\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Console.WriteLine($\"Вес: {weight}\");\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Console.WriteLine($\"Работает: {isEmployed}\");\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020}\n\u0020\u0020\u0020\u0020}\n}</string>
+
+
+    <!--Второй урок -->
+    <string name="lesson2_text_page1_1">Базовым строительным блоком программы являются инструкции (statement). Инструкция представляет некоторое действие, например, арифметическую операцию, вызов метода, объявление переменной и присвоение ей значения. В конце каждой инструкции в C# ставится точка с запятой (;). Данный знак указывает компилятору на конец инструкции. Например:</string>
+    <string name="lesson2_code_page1_1">Console.WriteLine(\"Hello World\");</string>
+    <string name="lesson2_text_page1_2">Данная строка представляет вызов метода Console.WriteLine, который выводит на консоль строку. В данном случае вызов метода является инструкцией и поэтому завершается точкой с запятой.\n\nНабор инструкций может объединяться в блок кода. Блок кода заключается в фигурные скобки, а инструкции помещаются между открывающей и закрывающей фигурными скобками:</string>
+    <string name="lesson2_code_page1_2">{\n\u0020\u0020Console.WriteLine(\"Привет\");\n\u0020\u0020Console.WriteLine(\"Добро пожаловать в C#\");\n}</string>
+    <string name="lesson2_text_page1_3">В данном блоке кода две инструкции, которые выводят на консоль определенную строку.\n\nОдни блоки кода могут содержать другие блоки:</string>
+    <string name="lesson2_code_page1_3">{\n\tConsole.WriteLine(\"Первый блок\");\n\t\t{\n\t\t\t\tConsole.WriteLine(\"Второй блок\");\n\t\t}\n}</string>
+    <string name="lesson2_text_page2_1">В какие скобки заключаются блоки кода?</string>
+    <string name="lesson2_text_page3_1">Точкой входа в программу на языке C# является метод Main. При создании проекта консольного приложения в Visual Studio, например, создается следующий метод Main:</string>
+    <string name="lesson2_code_page3_1">class Program\n{\n\t\t static void Main(string[] args)\n\t\t{\n\t\t\t\t// здесь помещаются выполняемые инструкции\n\t\t}\n}</string>
+    <string name="lesson2_text_page3_2">По умолчанию метод Main размещается в классе Program. Название класса может быть любым. Но метод Main является обязательной частью консольного приложения. Если мы изменим его название, то программа не скомпилируется.\n\nПо сути и класс, и метод представляют своего рода блок кода: блок метода помещается в блок класса. Внутри блока метода Main располагаются выполняемые в программе инструкции.</string>
+    <string name="lesson2_text_page4_1">C# является регистрозависимым языком. Это значит, в зависимости от регистра символов какое-то определенные названия может представлять разные классы, методы, переменные и т.д. Например, название обязательного метода Main начинается именно с большой буквы: "Main". Если мы назовем метод "main", то программа не скомпилируется, так как метод, который представляет стартовую точку в приложении, обязательно должен называться "Main", а не "main" или "MAIN".</string>
+    <string name="lesson2_text_page5_1">Для хранения данных в программе применяются переменные. Переменная представляет именнованную область памяти, в которой хранится значение определенного типа. Переменная имеет тип, имя и значение. Тип определяет, какого рода информацию может хранить переменная.\n\n Перед использованием любую переменную надо определить. Синтаксис определения переменной выглядит следующим образом:</string>
+    <string name="lesson2_code_page5_1">тип имя_переменной;</string>
+    <string name="lesson2_text_page5_2">Вначале идет тип переменной, потом ее имя. В качестве имени переменной может выступать любое произвольное название, которое удовлетворяет следующим требованиям:\n\n • имя может содержать любые цифры, буквы и символ подчеркивания, при этом первый символ в имени должен быть буквой или символом подчеркивания\n\n • в имени не должно быть знаков пунктуации и пробелов \n\n • имя не может быть ключевым словом языка C#. Таких слов не так много, и при работе в Visual Studio среда разработки подсвечивает ключевые слова синим цветом.\n\n Хотя имя переменой может быть любым, но следует давать переменным описательные имена, которые будут говорить об их предназначении \n\n Например, определим простейшую переменную:</string>
+    <string name="lesson2_code_page5_2">string name;</string>
+    <string name="lesson2_text_page5_3">В данном случае определена переменная name, которая имеет тип string. то есть переменная представляет строку. Поскольку определение переменной представляет собой инструкцию, то после него ставится точка с запятой.\n\nПри этом следует учитывать, что C# является регистрозависимым языком, поэтому следующие два определения переменных будут представлять две разные переменные:</string>
+    <string name="lesson2_code_page5_3">string name;\nstring Name;</string>
+    <string name="lesson2_text_page5_4">После определения переменной можно присвоить некоторое значение:</string>
+    <string name="lesson2_code_page5_4">string name;\nname = \"Tom\";</string>
+    <string name="lesson2_text_page5_5">Так как переменная name представляет тип string, то есть строку, то мы можем присвоить ей строку в двойных кавычках. Причем переменной можно присвоить только то значение, которое соответствует ее типу.\n\nВ дальнейшем с помощью имени переменной мы сможем обращаться к той области памяти, в которой хранится ее значение.\n\nТакже мы можем сразу при определении присвоить переменной значение. Данный прием называется инициализацией:</string>
+    <string name="lesson2_code_page5_5">string name = \"Tom\";</string>
+    <string name="lesson2_text_page6_1">Определите правильное название переменной для хранения имени</string>
+    <string name="lesson2_text_page7_1">Отличительной чертой переменных является то, что в программе можно многократно менять их значение. Например, создадим небольшую программу, в которой определим переменную, поменяем ее значение и выведем его на консоль:</string>
+    <string name="lesson2_code_page7_1">using System;\n\nnamespace HelloApp\n{\n\t\t class Program\n\t\t {\n\t\t\t\t static void Main(string[] args)\n\t\t\t\t {\n\t\t\t\t\t\t string name = \"Tom\"; \n\n\t\t\t\t\t\t Console.WriteLine(name);    // Tom \n\n\t\t\t\t\t\t name = \"Bob\";  // меняем значение переменной \n\t\t\t\t\t\t Console.WriteLine(name);  // Bob \n\n\t\t\t\t\t\t Console.Read();\n\t\t\t\t }\n\t\t }\n}</string>
+    <string name="lesson2_out_page7_1">Tom\nBob</string>
+
+
+    <!--Третий урок -->
+    <string name="lesson3_text_page1_1">Литералы представляют неизменяемые значения (иногда их еще называют константами). Литералы можно передавать переменным в качестве значения. Литералы бывают логическими, целочисленными, вещественными, символьными и строчными. И отдельный литерал представляет ключевое слово null.</string>
+
+    <string name="lesson3_text_page2_1"><b>Логические литералы</b>\n\nЕсть две логических константы - true (истина) и false (ложь):</string>
+    <string name="lesson3_code_page2_1">Console.WriteLine(true);\nConsole.WriteLine(false);</string>
+
+    <string name="lesson3_text_page3_1"><b>Целочисленные литералы</b>\n\nЦелочисленные литералы представляют положительные и отрицательные целые числа, например, 1, 2, 3, 4, -7, -109. Целочисленные литералы могут быть выражены в десятичной, шестнадцатеричной и двоичной форме.\n\nС целыми числами в десятичной форме все должно быть понятно, так как они используются в повседневной жизни:</string>
+    <string name="lesson3_code_page3_1">Console.WriteLine(-11);\nConsole.WriteLine(5);\nConsole.WriteLine(505);</string>
+    <string name="lesson3_text_page3_2">Числа в двоичной форме предваряются символами 0b, после которых идет набор из нулей и единиц:</string>
+    <string name="lesson3_code_page3_2">Console.WriteLine(0b11);        // 3\nConsole.WriteLine(0b1011);      // 11\nConsole.WriteLine(0b100001);    // 33</string>
+    <string name="lesson3_text_page3_3">Для записи числа в шестнадцатеричной форме применяются символы 0x, после которых идет набор символов от 0 до 9 и от A до F, которые собственно представляют число:</string>
+    <string name="lesson3_code_page3_3">Console.WriteLine(0x0A);    // 10\nConsole.WriteLine(0xFF);    // 255\nConsole.WriteLine(0xA1);    // 161</string>
+
+    <string name="lesson3_text_page4_1"><b>Вещественные литералы</b>\n\nВещественные литералы представляют вещественные числа. Этот тип литералов имеет две формы. Первая форма - вещественные числа с фиксированной запятой, при которой дробную часть отделяется от целой части точкой. Например:</string>
+    <string name="lesson3_code_page4_1">3.14\n100.001\n-0.38</string>
+    <string name="lesson3_text_page4_2">Также вещественные литералы могут определяться в экспоненциальной форме MEp, где M — мантисса, E - экспонента, которая фактически означает "*10^" (умножить на десять в степени), а p — порядок. Например:</string>
+    <string name="lesson3_code_page4_2">Console.WriteLine(3.2e3);\nConsole.WriteLine(1.2E-1);</string>
+
+    <string name="lesson3_text_page5_1"><b>Символьные литералы</b>\n\nСимвольные литералы представляют одиночные символы. Символы заключаются в одинарные кавычки.\n\nСимвольные литералы бывают нескольких видов. Прежде всего это обычные символы:</string>
+    <string name="lesson3_code_page5_1">\'2\'\n\'T\'\n\'A\'</string>
+
+    <string name="lesson3_text_page6_1"><b>Строковые литералы</b>\n\nСтроковые литералы представляют строки. Строки заключаются в двойные кавычки:</string>
+    <string name="lesson3_code_page6_1">Console.WriteLine0(\"hello\");\nConsole.WriteLine(\"фыва\");\nConsole.WriteLine(\"hello word\");</string>
+    <string name="lesson3_text_page6_2"><b>null</b>\n\n null представляет ссылку, которая не указывает ни на какой объект. То есть по сути отсутствие значения.</string>
+    <string name="lesson3_text_page7_1">Какой из перечисленных ниже литералов является целочисленным</string>
+
+    <!--Четвертый урок -->
+    <string name="lesson4_text_page1_1">Как и во многих языках программирования, в C# есть своя система типов данных, которая используется для создания переменных. Тип данных определяет внутреннее представление данных, множество значений, которые может принимать объект, а также допустимые действия, которые можно применять над объектом.\n\nВ языке C# есть следующие примитивные типы данных:\n\n • bool: хранит значение true или false (логические литералы). Представлен системным типом System.Boolean</string>
+    <string name="lesson4_code_page1_1"> bool alive = true;\nbool isDead = false;</string>
+    <string name="lesson4_text_page1_2">• byte: хранит целое число от 0 до 255 и занимает 1 байт. Представлен системным типом System.Byte</string>
+    <string name="lesson4_code_page1_2"> byte bit1 = 1;\nbyte bit2 = 102;</string>
+    <string name="lesson4_text_page1_3">• sbyte: хранит целое число от -128 до 127 и занимает 1 байт. Представлен системным типом System.SByte</string>
+    <string name="lesson4_code_page1_3"> sbyte bit1 = -101;\nsbyte bit2 = 102;</string>
+    <string name="lesson4_text_page1_4">• short: хранит целое число от -32768 до 32767 и занимает 2 байта. Представлен системным типом System.Int16</string>
+    <string name="lesson4_code_page1_4"> short n1 = 1;\nshort n2 = 102;</string>
+    <string name="lesson4_text_page1_5">• ushort: хранит целое число от 0 до 65535 и занимает 2 байта. Представлен системным типом System.UInt16</string>
+    <string name="lesson4_code_page1_5"> ushort n1 = 1;\nushort n2 = 102;</string>
+    <string name="lesson4_text_page1_6">• int: хранит целое число от -2147483648 до 2147483647 и занимает 4 байта. Представлен системным типом System.Int32. Все целочисленные литералы по умолчанию представляют значения типа int:</string>
+    <string name="lesson4_code_page1_6"> int a = 10;\nint b = 0b101;  // бинарная форма b =5 \nint c = 0xFF;  // шестнадцатеричная форма c = 255</string>
+    <string name="lesson4_text_page1_7">• uint: хранит целое число от 0 до 4294967295 и занимает 4 байта. Представлен системным типом System.UInt32</string>
+    <string name="lesson4_code_page1_7"> uint a = 10;\n uint b = 0b101;\n uint c = 0xFF;</string>
+    <string name="lesson4_text_page1_8">• long: хранит целое число от –9 223 372 036 854 775 808 до 9 223 372 036 854 775 807 и занимает 8 байт. Представлен системным типом System.Int64</string>
+    <string name="lesson4_code_page1_8"> long a = -10;\nlong b = 0b101;\nlong c = 0xFF;</string>
+    <string name="lesson4_text_page1_9">• ulong: хранит целое число от 0 до 18 446 744 073 709 551 615 и занимает 8 байт. Представлен системным типом System.UInt64</string>
+    <string name="lesson4_code_page1_9"> ulong a = 10;\nulong b = 0b101;\nulong c = 0xFF;</string>
+    <string name="lesson4_text_page1_10">• float: хранит число с плавающей точкой от -3.4*1038 до 3.4*1038 и занимает 4 байта. Представлен системным типом System.Single\n •double: хранит число с плавающей точкой от ±5.0*10-324 до ±1.7*10308 и занимает 8 байта. Представлен системным типом System.Double\n • decimal: хранит десятичное дробное число. Если употребляется без десятичной запятой, имеет значение от ±1.0*10-28 до ±7.9228*1028, может хранить 28 знаков после запятой и занимает 16 байт. Представлен системным типом System.Decimal \n • char: хранит одиночный символ в кодировке Unicode и занимает 2 байта. Представлен системным типом System.Char. Этому типу соответствуют символьные литералы:</string>
+    <string name="lesson4_code_page1_10">char a = \'A\';\nchar b = \'\x5A\';\nchar c = \'\u0420\';</string>
+    <string name="lesson4_text_page1_11">• string: хранит набор символов Unicode. Представлен системным типом System.String. Этому типу соответствуют строковые литералы.</string>
+    <string name="lesson4_code_page1_11">string hello = \"Hello\";\nstring word = \"world\";</string>
+    <string name="lesson4_text_page1_12">• object: может хранить значение любого типа данных и занимает 4 байта на 32-разрядной платформе и 8 байт на 64-разрядной платформе. Представлен системным типом System.Object, который является базовым для всех других типов и классов .NET.</string>
+    <string name="lesson4_code_page1_12">object a = 22;\nobject b = 3.14;\nobject c = \"hello code\";</string>
+
+    <string name="lesson4_text_page2_1">Например, определим несколько переменных разных типов и выведем их значения на консоль:</string>
+    <string name="lesson4_code_page2_1">using System;\n\n namespace HelloApp\n {\n\t\t class Program\n\t\t{\n\t\t\t\t static void Main(string[] args)\n\t\t\t\t{\n\t\t\t\t\t\t  string name = \"Tom\";\n\t\t\t\t\t\t int age = 33;\n\t\t\t\t\t\t bool isEmployed = false;\n\t\t\t\t\t\t double weight = 78.65;\n\n\t\t\t\t\t\t Console.WriteLine($\"Имя: {name}\");\n\t\t\t\t\t\t Console.WriteLine($\"Возраст: {age}\");\n\t\t\t\t\t\t Console.WriteLine($\"Вес: {weight}\");\n\t\t\t\t\t\t Console.WriteLine($\"Работает: {isEmployed}\");\n\t\t\t\t}\n\t\t}\n}</string>
+    <string name="lesson4_text_page2_2">Для вывода данных на консоль здесь применяется интерполяция: перед строкой ставится знак $ и после этого мы можем вводить в строку в фигурных скобках значения переменных. Консольный вывод программы:</string>
+    <string name="lesson4_out_page2_1">Имя: Tom\nВозраст: 33\nВес: 78,65\nРаботает: False</string>
+
+    <string name="lesson4_text_page3_1">Какой тип переменных занимает 4 байта?</string>
+
+
+    <!--Пятый урок -->
+    <string name="lesson5_text_page1_1">Консольный вывод\n\nДля вывода информации на консоль мы уже использовали встроенный метод Console.WriteLine. То есть, если мы хотим вывести некоторую информацию на консоль, то нам надо передать ее в метод Console.WriteLine:</string>
+    <string name="lesson5_code_page1_1">using System;\n
+
+\nnamespace HelloApp
+\n{
+    \n\t\t class Program
+    \n\t\t{
+        \n\t\t\t\t static void Main(string[] args)
+        \n\t\t\t\t{
+            \n\t\t\t\t\t\t string hello = \"Привет мир\";
+            \n\t\t\t\t\t\t Console.WriteLine(hello);
+            \n\t\t\t\t\t\t Console.WriteLine(\"Добро пожаловать в C#!\");
+            \n\t\t\t\t\t\t Console.WriteLine(\"Пока мир...\");
+            \n\t\t\t\t\t\t Console.WriteLine(24.5);
+            \n
+            \n\t\t\t\t\t\t Console.ReadKey();
+        \n\t\t\t\t}
+    \n\t\t}
+\n}</string>
+    <string name="lesson5_out_page1_1">Привет мир!\nДобро пожаловать в C#!\nПока мир...\n24,5</string>
+    <string name="lesson5_text_page1_2">Нередко возникает необходимость вывести на консоль в одной строке значения сразу нескольких переменных. В этом случае мы можем использовать прием, который называется интерполяцией:</string>
+    <string name="lesson5_code_page1_2">using System;\n
+
+\nnamespace HelloApp
+\n{
+    \n\t\t class Program
+    \n\t\t{
+        \n\t\t\t\t static void Main(string[] args)
+        \n\t\t\t\t{
+            \n\t\t\t\t\t\t string name = \"Tom\";
+            \n\t\t\t\t\t\t int age = 34;
+            \n\t\t\t\t\t\t double height = 1.7;
+            \n\t\t\t\t\t\t Console.WriteLine($\"Имя: {name}  Возраст: {age}  Рост: {height}м\");
+\n
+            \n\t\t\t\t\t\t Console.ReadKey();
+        \n\t\t\t\t}
+    \n\t\t}
+}</string>
+    <string name="lesson5_text_page1_3">Для встраивания отдельных значений в выводимую на консоль строку используются фигурные скобки, в которые заключается встраиваемое значение. Это можем значение переменной ({name}) или более сложное выражение (например, операция сложения {4 + 7}). А перед всей строкой ставится знак доллара $.\n\nПри выводе на консоль вместо помещенных в фигурные скобки выражений будут выводиться их значения:</string>
+    <string name="lesson5_out_page1_2">Имя: Tom  Возраст: 34  Рост: 1,7м</string>
+    <string name="lesson5_text_page1_4">Есть другой способ вывода на консоль сразу нескольких значений:</string>
+    <string name="lesson5_code_page1_3">using System;\n
+
+\nnamespace HelloApp
+\n{
+    \n\t\t class Program
+    \n\t\t{
+        \n\t\t\t\t static void Main(string[] args)
+        \n\t\t\t\t{
+            \n\t\t\t\t\t\t string name = \"Tom\";
+            \n\t\t\t\t\t\t int age = 34;
+            \n\t\t\t\t\t\t double height = 1.7;
+            \n\t\t\t\t\t\t Console.WriteLine(\"Имя: {0}  Возраст: {2}  Рост: {1}м\", name, height, age);
+ \n
+            \n\t\t\t\t\t\t Console.ReadKey();
+        \n\t\t\t\t}
+    \n\t\t}
+\n}</string>
+    <string name="lesson5_text_page1_5">Этот способ подразумевает, что первый параметр в методе Console.WriteLine представляет выводимую строку ("Имя: {0} Возраст: {2} Рост: {1}м"). Все последующие параметры представляют значения, которые могут быть встроенны в эту строку (name, height, age). При этом важен порядок подобных параметров. Например, в данном случае вначале идет name, потом height и потом age. Поэтому у name будет представлять параметр с номером 0 (нумерация начинается с нуля), height имеет номер 1, а age - номер 2. Поэтому в строке "Имя: {0} Возраст: {2} Рост: {1}м" на место плейсхолдеров {0}, {2}, {1} будут вставляться значения соответствующих параметров.\n\nКроме Console.WriteLine() можно также использовать метод Console.Write(), он работает точно так же за тем исключением, что не осуществляет переход на следующую строку.</string>
+
+    <string name="lesson5_text_page2_1">Для чего используется интерполяция?</string>
+
+    <string name="lesson5_text_page3_1">Консольный ввод\n\nКроме вывода информации на консоль мы можем получать информацию с консоли. Для этого предназначен метод Console.ReadLine(). Он позволяет получить введенную строку.</string>
+    <string name="lesson5_code_page3_1">using System;\n
+
+\nnamespace HelloApp
+\n{
+    \n\t\t class Program
+    \n\t\t{
+        \n\t\t\t\t static void Main(string[] args)
+        \n\t\t\t\t{
+            \n\t\t\t\t\t\t Console.Write(\"Введите свое имя: \");
+            \n\t\t\t\t\t\ string name = Console.ReadLine();
+            \n\t\t\t\t\t\ Console.WriteLine($\"Привет {name}\");
+ \n
+            \n\t\t\t\t\t\Console.ReadKey();
+        \n\t\t\t\}
+    \n\t\}
+\n}</string>
+    <string name="lesson5_text_page3_2">В данном случае все, что вводит пользователь, с помощью метода Console.ReadLine передается в переменную name.</string>
+    <string name="lesson5_out_page3_1">Введите свое имя: Том\nПривет Том</string>
+    <string name="lesson5_text_page3_3">Таким образом мы можем вводить информацию через консоль. Однако минусом этого метода является то, что Console.ReadLine считывает информацию именно в виде строки. Поэтому мы можем по умолчанию присвоить ее только переменной типа string. Как нам быть, если, допустим, мы хотим ввести возраст в переменную типа int или другую информацию в переменные типа double или decimal? По умолчанию платформа .NET предоставляет ряд методов, которые позволяют преобразовать различные значения к типам int, double и т.д. Некоторые из этих методов:\n\n • Convert.ToInt32() (преобразует к типу int)\n\n • Convert.ToDouble() (преобразует к типу double)\n\n • Convert.ToDecimal() (преобразует к типу decimal)\n\n Пример ввода значений:</string>
+    <string name="lesson5_code_page3_2">using System;
+\n
+\nnamespace HelloApp
+\n{
+    \n\t\t class Program
+    \n\t\t{
+        \n\t\t\t\t static void Main(string[] args)
+        \n\t\t\t\t{
+            \n\t\t\t\t\t\t Console.Write(\"Введите имя: \");
+            \n\t\t\t\t\t\t string name = Console.ReadLine();
+ \n
+            \n\t\t\t\t\t\t Console.Write(\"Введите возраст: \");
+            \n\t\t\t\t\t\t int age = Convert.ToInt32(Console.ReadLine());
+ \n
+            \n\t\t\t\t\t\t Console.Write(\"Введите рост: \");
+            \n\t\t\t\t\t\t double height = Convert.ToDouble(Console.ReadLine());
+ \n
+            \n\t\t\t\t\t\t Console.Write(\"Введите размер зарплаты: \");
+            \n\t\t\t\t\t\t decimal salary = Convert.ToDecimal(Console.ReadLine());
+ \n
+            \n\t\t\t\t\t\t Console.WriteLine($\"Имя: {name}  Возраст: {age}  Рост: {height}м  Зарплата: {salary}$\");
+ \n
+            \n\t\t\t\t\t\t Console.ReadKey();
+        \n\t\t\t\t}
+    \n\t\t}
+\n}</string>
+    <string name="lesson5_text_page3_4">При вводе важно учитывать текущую операционную систему. В одних культурах разделителем между целой и дробной частью является точка (США, Великобритания...), в других - запятая (Россия, Германия...). Например, если текущая ОС - русскоязычная, значит, надо вводить дробные числа с разделителем запятой. Если локализация англоязычная, значит, разделителем целой и дробной части при вводе будет точка.</string>
+    <string name="lesson5_out_page3_2">Введите имя: Том\n
+Введите возраст: 25\n
+Введите рост: 1,75\n
+Введите размер зарплаты: 300,67\n
+Имя: Том  Возраст: 25  Рост: 1,75м  Зарплата: 300,67$</string>
+
+    <string name="lesson5_text_page4_1">Какой метод преобразовывает значение к типу Int?</string>
+    <string name="title_activity_achieve">AchieveActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

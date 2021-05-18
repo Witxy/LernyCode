@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#2D2F34</color>
+    <color name="dark_grey">#26272b</color>
+    <color name="black">#000000</color>
+
+    <color name="yellow">#F0E236</color>
+    <color name="yellow_inactive">#c9cc06</color>
+
+    <color name="white_inactive">#d6d6d2</color>
+    <color name="red">#c71212 </color>
+    -->
+    <color name="output_white">#FFFFFF</color>
+    <color name="white">#26272b</color>
+    <color name="grey">#edeef0</color>
+    <color name="dark_grey">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="yellow">#5986bb</color>
+    <color name="yellow_inactive">#4d73a1</color>
+
+    <color name="white_inactive">#494b54</color>
+    <color name="red">#c71212 </color>
+    <color name="color_string">#db003e</color>
+
+</resources>

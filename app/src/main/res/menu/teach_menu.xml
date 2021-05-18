@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/teachMenu_Vocab"
+        android:title="@string/vocab">
+    </item>
+    <item
+        android:id="@+id/teachMenu_fontSize"
+        android:title="@string/fontSize">
+    </item>
+    <item
+        android:id="@+id/teachMenu_favour"
+        android:title="@string/favourite">
+    </item>
+</menu>
