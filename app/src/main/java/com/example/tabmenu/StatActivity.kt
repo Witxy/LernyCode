@@ -21,4 +21,9 @@ class StatActivity : AppCompatActivity() {
         taskOpen.text = prefs.getInt("taskCount",0).toString()
 
     }
+
+
+    override fun onResume() {
+        super.onResume()
+    }
 }
