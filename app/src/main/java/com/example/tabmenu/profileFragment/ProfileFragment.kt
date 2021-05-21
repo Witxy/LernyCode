@@ -1,6 +1,5 @@
 package com.example.tabmenu.profileFragment
 
-import android.content.Context
 import android.os.Bundle
 import android.view.*
 import android.widget.ImageView
@@ -31,9 +30,10 @@ class ProfileFragment : Fragment() {
         val profileName = view.findViewById(R.id.profile_name) as TextView
         profileName.text= currentUser?.displayName
 
-        val avatarRef: StorageReference = storageFirebase.child("users/"+mAuth.currentUser.uid+"profile.jpg")
+        val avatarRef: StorageReference = storageFirebase.child("users/" + mAuth.currentUser.uid + "profile.jpg")
         avatarRef.downloadUrl.addOnSuccessListener {
-           Picasso.get().load(it).resize(100,100).noFade().noPlaceholder().into(imageView)
+           Picasso.get().load(it).resize(100,100).noPlaceholder().into(imageView)
+            Picasso.get().load(it).fetch()
 
         }
 

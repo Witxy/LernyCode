@@ -1,5 +1,6 @@
 package com.example.tabmenu
 
+import android.content.SharedPreferences
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
@@ -12,10 +13,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.core.view.GestureDetectorCompat
-import java.io.BufferedReader
-import java.io.File
-import java.io.InputStream
-import java.nio.file.Paths
 import kotlin.math.abs
 
 
@@ -69,6 +66,7 @@ class   TaskComplete : AppCompatActivity() {
 
 
 
+
     private lateinit var detector: GestureDetectorCompat
 
 
@@ -89,9 +87,11 @@ class   TaskComplete : AppCompatActivity() {
         val localIntent = intent
 
 
+
+
         when (localIntent.getIntExtra("type", 0)) {
-            1 -> taskCompleteManager(1, 7)
-            2 -> taskCompleteManager(2, 4)
+            1 -> taskCompleteManager(1, 6)
+            2 -> taskCompleteManager(1, 6)
         }
 
     }
@@ -177,11 +177,11 @@ class   TaskComplete : AppCompatActivity() {
     }
 
     private fun onSwipeRight() {
-//        if(currentPage!=0) {
-//            val view  = View(this)
-//            currentPage--
-//            resetViews(view)
-//        }
+       if(currentPage!=0) {
+            val view  = View(this)
+           currentPage--
+            resetViews(view)
+        }
     }
     private fun onSwipeLeft() {
         if(nextPageArray[currentPage]) {
@@ -204,7 +204,9 @@ class   TaskComplete : AppCompatActivity() {
         }
         progress.max = pageCount
         readSetting()
-        pageProceed()
+        task(currentPage)
+        //pageProceed()
+
     }
 
 
@@ -217,7 +219,7 @@ class   TaskComplete : AppCompatActivity() {
 
  */
         when (count) {
-            1 -> task1(currentPage)
+            1 -> task(currentPage)
         }
 
     }
@@ -225,24 +227,25 @@ class   TaskComplete : AppCompatActivity() {
 
     private fun readSetting() {
 
+
         val fileName = "task1.txt"
         val inputString = application.assets.open(fileName).bufferedReader().use { it.readText() }
         val settingList: List<String> = inputString.split("\n")
 
-        val pageCountRead: List<String> = settingList[0].split("%№%","\r")
-        val taskCountRead: List<String> = settingList[1].split("%№%","&?%","\r")
-        val buttonRowsRead: List<String> = settingList[2].split("%№%","&?%","\r")
-        val buttonInRowCountRead: List<String> = settingList[3].split("%№%","&?%","\r")
-        val buttonTextRead: List<String> = settingList[4].split("%№%","&?%","\r")
-        val elementCountRead: List<String> = settingList[5].split("%№%","&?%","\r")
-        val pageContentRead: List<String> = settingList[6].split("%№%","&?%","\r")
-        val editTextRead: List<String> = settingList[7].split("%№%","&?%","\r")
-        val textTextRead: List<String> = settingList[8].split("%№%","&?%","\r")
-        val rowTextTextRead: List<String> = settingList[9].split("%№%","&?%","\r")
-        val rowTextSpanRead:List<String> = settingList[10].split("%№%","&?%","\r")
-        val rightAnswerArrayRead: List<String> = settingList[11].split("%№%","&?%","\r")
-        val taskTextRead: List<String> = settingList[12].split("%№%","&?%","\r")
-        val codeTextRead: List<String> = settingList[13].split("%№%","&?%","\r")
+        val pageCountRead: List<String> = settingList[0].split("%№%", "\r")
+        val taskCountRead: List<String> = settingList[1].split("%№%", "&?%", "\r")
+        val buttonRowsRead: List<String> = settingList[2].split("%№%", "&?%", "\r")
+        val buttonInRowCountRead: List<String> = settingList[3].split("%№%", "&?%", "\r")
+        val buttonTextRead: List<String> = settingList[4].split("%№%", "&?%", "\r")
+        val elementCountRead: List<String> = settingList[5].split("%№%", "&?%", "\r")
+        val pageContentRead: List<String> = settingList[6].split("%№%", "&?%", "\r")
+        val editTextRead: List<String> = settingList[7].split("%№%", "&?%", "\r")
+        val textTextRead: List<String> = settingList[8].split("%№%", "&?%", "\r")
+        val rowTextTextRead: List<String> = settingList[9].split("%№%", "&?%", "\r")
+        val rowTextSpanRead:List<String> = settingList[10].split("%№%", "&?%", "\r")
+        val rightAnswerArrayRead: List<String> = settingList[11].split("%№%", "&?%", "\r")
+        val taskTextRead: List<String> = settingList[12].split("%№%", "&?%", "\r")
+        val codeTextRead: List<String> = settingList[13].split("%№%", "&?%", "\r")
 
         pageCountSet = pageCountRead[1].toInt() //количество страниц
         for(i in 1..taskCountRead.size-2) //количество тасков
@@ -286,7 +289,7 @@ class   TaskComplete : AppCompatActivity() {
 
     }
 
-    private fun task1(curPage: Int)
+    private fun task(curPage: Int)
     {
         var count: Int = 0
         val taskText: TextView = findViewById(R.id.taskText)
@@ -302,13 +305,13 @@ class   TaskComplete : AppCompatActivity() {
 
         for(i in 0 until buttonRows[curPage])
         {
-            buttonRowAdd(buttonInRowCount[buttonRowCounter+i])
+            buttonRowAdd(buttonInRowCount[buttonRowCounter + i])
             count++
-            for(j in 0 until buttonInRowCount[buttonRowCounter+i])
+            for(j in 0 until buttonInRowCount[buttonRowCounter + i])
             {
-                buttonEdit(butTable.findViewById(buttonArray[butIndex]), buttonText[buttonCounter+j], allTaskCount)
+                buttonEdit(butTable.findViewById(buttonArray[butIndex]), buttonText[buttonCounter + j], allTaskCount)
             }
-            buttonCounter+=buttonInRowCount[buttonRowCounter+i]
+            buttonCounter+=buttonInRowCount[buttonRowCounter + i]
         }
         buttonRowCounter+=count
         count=0
@@ -316,21 +319,21 @@ class   TaskComplete : AppCompatActivity() {
         for(i in 0 until elementCount[curPage])
         {
 
-            when(pageContent[rowCounter+i])
+            when(pageContent[rowCounter + i])
             {
-                "row"->{
+                "row" -> {
                     rowAdd()
                 }
-                "edit"->{
+                "edit" -> {
                     newEdit(editText[editCounter])
                     editCounter++
                 }
-                "text"->{
+                "text" -> {
                     newText(textText[textCounter])
                     textCounter++
                 }
-                "rowtext"->{
-                    textRowAdd(rowTextText[rowTextCounter],rowTextSpan[rowTextCounter])
+                "rowtext" -> {
+                    textRowAdd(rowTextText[rowTextCounter], rowTextSpan[rowTextCounter])
                     rowTextCounter++
                 }
             }
@@ -342,7 +345,7 @@ class   TaskComplete : AppCompatActivity() {
 
         for(i in 0 until taskCount[curPage])
         {
-            rightAnswerArray.add(rightAnswers[rightAnswerCounter+i])
+            rightAnswerArray.add(rightAnswers[rightAnswerCounter + i])
             count++
         }
         rightAnswerCounter+=count
@@ -406,6 +409,22 @@ class   TaskComplete : AppCompatActivity() {
             }
             else
             {
+                val editor  = getSharedPreferences("task", MODE_PRIVATE).edit()
+                val prefs = getSharedPreferences("task", MODE_PRIVATE)
+                when(intent.getIntExtra("type",0))
+                {
+                    1->editor.putBoolean("task1",true)
+                    2->editor.putBoolean("task2",true)
+                }
+                var counter: Int = 0
+                editor.apply()
+                if(prefs.getBoolean("task1",false))
+                    counter++
+                if(prefs.getBoolean("task2",false))
+                    counter++
+
+                editor.putInt("taskCount", counter)
+                editor.apply()
                 finish()
             }
         }
@@ -614,8 +633,7 @@ class   TaskComplete : AppCompatActivity() {
         val compileButton: ImageButton = findViewById(R.id.compileButton)
         when(task)
         {
-            1->
-            {
+            1 -> {
                 rowCompileAdd("Колицество цифр = 3")
                 compileButton.isClickable = false
 
