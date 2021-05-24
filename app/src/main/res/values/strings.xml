@@ -94,6 +94,11 @@
     <string name="title_activity_task">TaskActivity</string>
     <string name="enterCode">Вставьте код снизу</string>
 
+    <string name="stat_timeApp">Время в приложении:</string>
+    <string name="stat_countTask">Количество пройденных заданий:</string>
+    <string name="stat_countLect">Количество пройденных лекций:</string>
+    <string name="stat_timeLect">Времени затрачено на лекции:</string>
+    <string name="stat_timeTask">Времени затрачено на задания:</string>
 
     <!--Первое задание -->
     <string name="task1_taskText1">Первое что надо сделать в любой программе - определить нужные переменные. Определим переменные, которые понадобятся нам для дальнейшей работы.</string>

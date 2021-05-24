@@ -30,70 +30,121 @@
     </androidx.appcompat.widget.Toolbar>
 
 
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+
         >
+
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/statTimeAppText"
+            android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginStart="10dp"
-
-            android:text="Время в приложении:                                 0 часов 32 минуты"
+            android:layout_marginTop="10dp"
+            android:text="@string/stat_timeApp"
             android:textColor="@color/white"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
-            android:id="@+id/taskOpenStat"
-            android:layout_width="match_parent"
+            android:id="@+id/statTimeAppCode"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="0 ч. 0 м. 0 с."
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/statCountTaskText"
+            android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:text="Количество пройденных заданий:         1/6 шт."
+            android:layout_marginTop="10dp"
+            android:text="@string/stat_countTask"
             android:textColor="@color/white"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statTimeAppText" />
+
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/statCountTaskCode"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="0/6 шт"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/statTimeAppCode"
+            app:layout_constraintTop_toBottomOf="@+id/statTimeAppText" />
+
+        <TextView
+            android:id="@+id/statCountLectText"
+            android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:text="Количество прочитанных лекций:         2/10 шт."
+            android:layout_marginTop="10dp"
+            android:text="@string/stat_countLect"
             android:textColor="@color/white"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statCountTaskText" />
+
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/statCountLectCode"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="0/7 шт"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/statTimeAppCode"
+            app:layout_constraintTop_toBottomOf="@+id/statCountTaskCode" />
+
+        <TextView
+            android:id="@+id/statTimeTaskText"
+            android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:text="Времени потраченно на лекции:            0 часов 15 минут"
+            android:layout_marginTop="10dp"
+            android:text="@string/stat_timeTask"
             android:textColor="@color/white"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statCountLectText" />
+
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/statTimeTaskCode"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="0 ч. 0 м. 0 с."
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/statTimeAppCode"
+            app:layout_constraintTop_toBottomOf="@+id/statCountLectCode" />
+
+
+        <TextView
+            android:id="@+id/statTimeLectText"
+            android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:text="Времени потраченно на задания:          0 часов 5 минут"
+            android:layout_marginTop="10dp"
+            android:text="@string/stat_timeLect"
             android:textColor="@color/white"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statTimeTaskText" />
+
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/statTimeLectCode"
+            android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:text="Количество открытий компилятора:     5 раз"
+            android:layout_marginTop="10dp"
+            android:text="0 ч. 0 м. 0 с."
             android:textColor="@color/white"
-            />
+            app:layout_constraintStart_toStartOf="@+id/statTimeAppCode"
+            app:layout_constraintTop_toBottomOf="@+id/statTimeTaskCode" />
 
-
-
-
-
-    </LinearLayout>
-
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </LinearLayout>

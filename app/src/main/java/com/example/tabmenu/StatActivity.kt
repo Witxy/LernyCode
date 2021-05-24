@@ -12,18 +12,16 @@ class StatActivity : AppCompatActivity() {
 
 
 
-        val taskOpen: TextView = findViewById(R.id.taskOpenStat)
+        val countTask: TextView = findViewById(R.id.statCountTaskCode)
         val prefs = getSharedPreferences("task", MODE_PRIVATE)
         val editor  = getSharedPreferences("task", MODE_PRIVATE).edit()
 //        editor.remove("taskCount").commit()
 //        editor.remove("task1").commit()
 //       editor.remove("task2").commit()
-        taskOpen.text = prefs.getInt("taskCount",0).toString()
+        val tempString: String = prefs.getInt("taskCount",0).toString()+"/6шт"
+        countTask.text = tempString
 
     }
 
 
-    override fun onResume() {
-        super.onResume()
-    }
 }
