@@ -1,13 +1,11 @@
 package com.example.tabmenu
 
-import android.content.Intent
 import android.content.SharedPreferences
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
-import android.text.style.BackgroundColorSpan
 import android.text.style.ForegroundColorSpan
 import android.view.Gravity
 import android.view.View
@@ -17,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.firebase.database.collection.LLRBNode
 
 class TeachActivity : AppCompatActivity() {
 
@@ -30,7 +27,8 @@ class TeachActivity : AppCompatActivity() {
     var testAnswer: Int = 0
     var isTest: Boolean = false
     var prevPage: Boolean = false
-
+    var textArray: ArrayList<String> = ArrayList()
+    var elementCount: ArrayList<Int> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,11 +56,11 @@ class TeachActivity : AppCompatActivity() {
 
         when (localIntent.getIntExtra("type",0))
         {
-            1 -> pageManager(1, 4)
-            2 -> pageManager(2, 7)
-            3->pageManager(3, 7)
-            4->pageManager(4, 3)
-            5->pageManager(5, 4)
+            1 -> pageManager(1, 3, "lesson1.txt")
+            2 -> pageManager(2, 7, "lesson2.txt")
+            3->pageManager(3, 7, "lesson3.txt")
+            4->pageManager(4, 3, "lesson4.txt")
+            5->pageManager(5, 4, "lesson5.txt")
         }
 
 
@@ -83,22 +81,24 @@ class TeachActivity : AppCompatActivity() {
     }
 
 
-    private fun pageManager(argCount: Int, argPageCount: Int)
+    private fun pageManager(argCount: Int, argPageCount: Int, fName: String)
     {
         val progress: ProgressBar = findViewById(R.id.progressBar)
         count = argCount
         pageCount = argPageCount
         progress.max = pageCount
         progress.progress = curPage
-        lessonPageProceed()
+        readSetting(fName)
 
     }
 
+    /*
     private fun lessonPageProceed()
     {
+        //readSetting("lesson1.txt")
         when(count)
         {
-            1->lesson1()
+            1->lesson()
             2->lesson2()
             3->lesson3()
             4->lesson4()
@@ -106,7 +106,59 @@ class TeachActivity : AppCompatActivity() {
         }
     }
 
+     */
 
+
+    private fun readSetting(fName: String)
+    {
+        val inputString = application.assets.open(fName).bufferedReader().use { it.readText() }
+        val settingList: List<String> = inputString.split("\n","%№%","|\\|", "\r")
+
+        for(i in settingList.indices)
+        {
+            if(settingList[i]!="")
+            {
+                textArray.add(settingList[i])
+            }
+        }
+            lesson()
+    }
+    private fun lesson()
+    {
+        var tempPage = curPage-1
+        elementCount.add(tempPage,0)
+        if(tempPage-1==-1)
+            tempPage++
+        for(i in elementCount[tempPage-1] until textArray.size)
+        {
+            if(textArray[i] =="text")
+            {
+                lessonTextAdd(textArray[i+1])
+            }
+            else if(textArray[i]== "test")
+            {
+                testAdd(textArray[i+1],textArray[i+2],textArray[i+3],textArray[i+4],textArray[i+5].toInt())
+            }
+            else if(textArray[i]== "code")
+            {
+                lessonCodeAdd(textArray[i+1])
+            }
+            else if(textArray[i]== "out")
+            {
+                lessonOutAdd(textArray[i+1])
+            }
+            else if(textArray[i] =="page")
+            {
+                elementCount[curPage-1] = i+1
+                break
+            }
+            elementCount[curPage-1] = i
+
+        }
+
+    }
+
+/*
     private fun lesson1()
     {
         when(curPage)
@@ -298,13 +350,20 @@ class TeachActivity : AppCompatActivity() {
         }
     }
 
+ */
+
     private fun lessonTextAdd(text: String)
     {
         val field: LinearLayout = findViewById(R.id.textField)
         val textV = TextView(this)
         val params = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT)
+        val rowSplit = text.split("\\n")
         params.setMargins(10, 10, 10, 10)
-        textV.text = text
+        for(i in rowSplit.indices) {
+            textV.append(rowSplit[i])
+            textV.append("\n")
+
+        }
         textV.textSize = 14F
         textV.textAlignment = View.TEXT_ALIGNMENT_VIEW_START
         textV.typeface = ResourcesCompat.getFont(this, R.font.verdana)
@@ -321,7 +380,7 @@ class TeachActivity : AppCompatActivity() {
         val field: LinearLayout = findViewById(R.id.textField)
         val textV = TextView(this)
         val params = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT)
-        val rowSplit = text.split("\n")
+        val rowSplit = text.split("\\n")
 
         var spanWord: Spannable
         var literalText: String
@@ -407,12 +466,13 @@ class TeachActivity : AppCompatActivity() {
         field.addView(textV)
 
     }
-    private fun consoleOutputAdd(text: String)
+    private fun lessonOutAdd(text: String)
     {
         val field: LinearLayout = findViewById(R.id.textField)
         val textB = TextView(this)
         val textV = TextView(this)
         val params = TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT)
+        val rowSplit = text.split("\\n")
         textB.text = "Вывод на консоль:"
         textB.textSize = 14F
         textB.textAlignment = View.TEXT_ALIGNMENT_VIEW_START
@@ -421,7 +481,11 @@ class TeachActivity : AppCompatActivity() {
         field.addView(textB)
 
         params.setMargins(10, 10, 10, 10)
-        textV.text = text
+        for(i in rowSplit.indices) {
+            textV.append(rowSplit[i])
+            textV.append("\n")
+
+        }
         textV.textSize = 14F
         textV.textAlignment = View.TEXT_ALIGNMENT_VIEW_START
         textV.setTextColor(ContextCompat.getColor(this, R.color.output_white))
@@ -494,7 +558,7 @@ class TeachActivity : AppCompatActivity() {
                         field.removeAllViews()
                         curPage++
                         progress.progress = curPage
-                        lessonPageProceed()
+                        lesson()
                         radioList.clear()
                         isTest = false
                     } else {
@@ -513,7 +577,7 @@ class TeachActivity : AppCompatActivity() {
                     field.removeAllViews()
                     curPage++
                     progress.progress = curPage
-                    lessonPageProceed()
+                    lesson()
                 }
 
             } else {
@@ -522,7 +586,7 @@ class TeachActivity : AppCompatActivity() {
                 prevPage = false
                 field.removeAllViews()
                 curPage++
-                lessonPageProceed()
+                lesson()
             }
         }
         else
