@@ -409,6 +409,9 @@ class   TaskComplete : AppCompatActivity() {
             }
             else
             {
+                val achieveEditor  = getSharedPreferences("achieve", MODE_PRIVATE).edit()
+                achieveEditor.putBoolean("achieve3", true)
+                achieveEditor.apply()
                 val editor  = getSharedPreferences("task", MODE_PRIVATE).edit()
                 val prefs = getSharedPreferences("task", MODE_PRIVATE)
                 when(intent.getIntExtra("type",0))

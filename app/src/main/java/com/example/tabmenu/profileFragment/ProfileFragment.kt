@@ -1,9 +1,13 @@
 package com.example.tabmenu.profileFragment
 
+import android.app.Activity
+import android.content.Context
 import android.os.Bundle
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.tabmenu.R
 import com.google.firebase.auth.FirebaseAuth
@@ -32,13 +36,17 @@ class ProfileFragment : Fragment() {
 
         val avatarRef: StorageReference = storageFirebase.child("users/" + mAuth.currentUser.uid + "profile.jpg")
         avatarRef.downloadUrl.addOnSuccessListener {
-           Picasso.get().load(it).resize(100,100).noPlaceholder().into(imageView)
+           Picasso.get().load(it).resize(100, 100).noPlaceholder().into(imageView)
             Picasso.get().load(it).fetch()
+
+
+
 
         }
 
         return view
     }
+
 
 
 }

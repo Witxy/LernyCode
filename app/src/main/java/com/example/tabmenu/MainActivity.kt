@@ -31,6 +31,9 @@ import com.google.firebase.auth.FirebaseAuth
         val botNav= findViewById<BottomNavigationView>(R.id.bottom_navigation)
         val navController = findNavController(R.id.fragment)
 
+        val achieveEditor  = getSharedPreferences("achieve", MODE_PRIVATE).edit()
+        achieveEditor.putBoolean("achieve1", true)
+        achieveEditor.apply()
 
         botNav.setupWithNavController(navController)
         //botNav.selectedItemId = R.id.teachFragment

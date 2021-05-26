@@ -332,6 +332,9 @@
 Имя: Том  Возраст: 25  Рост: 1,75м  Зарплата: 300,67$</string>
 
     <string name="lesson5_text_page4_1">Какой метод преобразовывает значение к типу Int?</string>
+
+
+
     <string name="title_activity_achieve">AchieveActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

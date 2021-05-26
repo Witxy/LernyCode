@@ -60,7 +60,7 @@ class TeachActivity : AppCompatActivity() {
             2 -> pageManager(2, 7, "lesson2.txt")
             3->pageManager(3, 7, "lesson3.txt")
             4->pageManager(4, 3, "lesson4.txt")
-            5->pageManager(5, 4, "lesson5.txt")
+            5->pageManager(5, 5, "lesson5.txt")
         }
 
 
@@ -157,200 +157,6 @@ class TeachActivity : AppCompatActivity() {
         }
 
     }
-
-/*
-    private fun lesson1()
-    {
-        when(curPage)
-        {
-            1->{
-                lessonTextAdd(resources.getString(R.string.lesson1_text_page1_1))
-
-            }
-            2->{
-                lessonTextAdd(resources.getString(R.string.lesson1_text_page2_1))
-                testAdd("C++ и Java","Kotlin и Java","Javascript и PHP","Ни к каким",1)
-            }
-
-            3->{
-                lessonTextAdd(resources.getString(R.string.lesson1_text_page3_1))
-            }
-            4->{
-                lessonTextAdd(resources.getString(R.string.lesson1_text_page4_1))
-            }
-        }
-
-    }
-
-    private fun lesson2()
-    {
-        when (curPage)
-        {
-            1->{
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page1_1))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page1_1))
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page1_2))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page1_2))
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page1_3))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page1_3))
-            }
-            2->{
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page2_1))
-                testAdd("В квадратные скобки","В круглые скобки","В фигурные скобки","Блоки кода не выделяются скобками",3)
-            }
-            3->{
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page3_1))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page3_1))
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page3_2))
-            }
-            4->{
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page4_1))
-            }
-            5->{
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page5_1))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page5_1))
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page5_2))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page5_2))
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page5_3))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page5_3))
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page5_4))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page5_4))
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page5_5))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page5_5))
-            }
-            6-> {
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page6_1))
-                testAdd("1Name","jfsndfmds","my name","name",4)
-            }
-            7->{
-                lessonTextAdd(resources.getString(R.string.lesson2_text_page7_1))
-                lessonCodeAdd(resources.getString(R.string.lesson2_code_page7_1))
-                consoleOutputAdd(resources.getString(R.string.lesson2_out_page7_1))
-            }
-        }
-    }
-    private fun lesson3()
-    {
-        when(curPage) {
-            1->{
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page1_1))
-
-            }
-            2->{
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page2_1))
-                lessonCodeAdd(resources.getString(R.string.lesson3_code_page2_1))
-            }
-            3->{
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page3_1))
-                lessonCodeAdd(resources.getString(R.string.lesson3_code_page3_1))
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page3_2))
-                lessonCodeAdd(resources.getString(R.string.lesson3_code_page3_2))
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page3_3))
-                lessonCodeAdd(resources.getString(R.string.lesson3_code_page3_3))
-            }
-            4->{
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page4_1))
-                lessonCodeAdd(resources.getString(R.string.lesson3_code_page4_1))
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page4_2))
-                lessonCodeAdd(resources.getString(R.string.lesson3_code_page4_2))
-            }
-            5->{
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page5_1))
-                lessonCodeAdd(resources.getString(R.string.lesson3_code_page5_1))
-            }
-            6->{
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page6_1))
-                lessonCodeAdd(resources.getString(R.string.lesson3_code_page6_1))
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page6_2))
-            }
-            7->{
-                lessonTextAdd(resources.getString(R.string.lesson3_text_page7_1))
-                testAdd("Console.WriteLine(true);","Console.WriteLine(505);","\'2\'","Console.WriteLine(\"hello\");",2)
-            }
-        }
-    }
-
-    private fun lesson4() {
-        when (curPage) {
-            1 -> {
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_1))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_1))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_2))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_2))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_3))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_3))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_4))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_4))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_5))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_5))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_6))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_6))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_7))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_7))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_8))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_8))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_9))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_9))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_10))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_10))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_11))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_11))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page1_12))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page1_12))
-            }
-            2 -> {
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page2_1))
-                lessonCodeAdd(resources.getString(R.string.lesson4_code_page2_1))
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page2_2))
-                consoleOutputAdd(resources.getString(R.string.lesson4_out_page2_1))
-            }
-            3 -> {
-                lessonTextAdd(resources.getString(R.string.lesson4_text_page3_1))
-                testAdd("ulong","byte","short","int",4)
-            }
-        }
-    }
-
-    private fun lesson5()
-    {
-        when(curPage)
-        {
-            1->{
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page1_1))
-                lessonCodeAdd(resources.getString(R.string.lesson5_code_page1_1))
-                consoleOutputAdd(resources.getString(R.string.lesson5_out_page1_1))
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page1_2))
-                lessonCodeAdd(resources.getString(R.string.lesson5_code_page1_2))
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page1_3))
-                consoleOutputAdd(resources.getString(R.string.lesson5_out_page1_2))
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page1_4))
-                lessonCodeAdd(resources.getString(R.string.lesson5_code_page1_3))
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page1_5))
-
-            }
-            2->{
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page2_1))
-                testAdd("Для вывода в одной строке несколько переменных","Для вывода чисел","Для вывода переменных уппорядоченно","Несуществующий термин",1)
-            }
-            3->{
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page3_1))
-                lessonCodeAdd(resources.getString(R.string.lesson5_code_page3_1))
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page3_2))
-                consoleOutputAdd(resources.getString(R.string.lesson5_out_page3_1))
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page3_3))
-                lessonCodeAdd(resources.getString(R.string.lesson5_code_page3_2))
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page3_4))
-                consoleOutputAdd(resources.getString(R.string.lesson5_out_page3_2))
-            }
-            4->{
-                lessonTextAdd(resources.getString(R.string.lesson5_text_page4_1))
-                testAdd("Convert.ToDouble()","Convert.ToDecimal()","Convert.ToInt32() ","Ничего из вышеперечисленного",3)
-
-            }
-        }
-    }
-
- */
 
     private fun lessonTextAdd(text: String)
     {
@@ -591,12 +397,44 @@ class TeachActivity : AppCompatActivity() {
         }
         else
         {
+            val editor  = getSharedPreferences("task", MODE_PRIVATE).edit()
+            val prefs = getSharedPreferences("task", MODE_PRIVATE)
+            val achieveEditor  = getSharedPreferences("achieve", MODE_PRIVATE).edit()
+            achieveEditor.putBoolean("achieve2", true)
+            achieveEditor.apply()
             when(count) {
                 1 -> {
-                    sharedPreferences.putBoolean("lesson1", true)
-                    sharedPreferences.apply()
+                    editor.putBoolean("lesson1", true)
                 }
+                2 -> {
+                    editor.putBoolean("lesson2", true)
+                }
+                3 -> {
+                    editor.putBoolean("lesson3", true)
+                }
+                4 -> {
+                    editor.putBoolean("lesson4", true)
+                }
+                5 -> {
+                    editor.putBoolean("lesson5", true)
+                }
+
             }
+            var counter: Int = 0
+            editor.apply()
+            if(prefs.getBoolean("lesson1",false))
+                counter++
+            if(prefs.getBoolean("lesson2",false))
+                counter++
+            if(prefs.getBoolean("lesson3",false))
+                counter++
+            if(prefs.getBoolean("lesson4",false))
+                counter++
+            if(prefs.getBoolean("lesson5",false))
+                counter++
+
+            editor.putInt("lessonCount", counter)
+            editor.apply()
 
             finish()
         }
